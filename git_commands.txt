@@ -1,0 +1,17 @@
+<center>
+<p>
+            <h2>Getting Started with Git and GitHub</h2>
+            <h3>Install Git:
+            You can download Git from <a href="https://git-scm.com/" target="_blank">git-scm.com</a>.</h3>
+            <h3>Basic Git Commands:</h3>
+            <ul>
+                <li><code>git init</code> - Initialize a new Git repository.</li>
+                <li><code>git clone [URL]</code> - Clone an existing repository.</li>
+                <li><code>git add [file]</code> - Stage a file for the next commit.</li>
+                <li><code>git commit -m "message"</code> - Commit staged files with a descriptive message.</li>
+                <li><code>git status</code> - Check the status of your working directory.</li>
+                <li><code>git push origin [branch-name]</code> - Push your changes to the remote repository.</li>
+                <li><code>git pull</code> - Fetch and merge changes from the remote repository.</li>
+            </ul>
+        </p>
+</center>
