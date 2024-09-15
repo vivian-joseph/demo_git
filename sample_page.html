@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Members</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #4F46E5;
+            --secondary-color: #6D28D9;
+            --background-color: #F9FAFB;
+            --text-color: #1F2937;
+            --card-background: #FFFFFF;
+            --border-radius: 12px;
+            --transition-duration: 0.3s;
+            --shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .member-card {
+            background-color: var(--card-background);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            padding: 20px;
+            transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .member-name {
+            font-size: 1.25rem;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: var(--secondary-color);
+        }
+
+        .member-role {
+            font-size: 1rem;
+            color: #6B7280;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+
+            .member-card {
+                padding: 15px;
+            }
+
+            .member-name {
+                font-size: 1.1rem;
+            }
+
+            .member-role {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Class Members</h1>
+        <div class="members-grid">
+
+            <div class="member-card">
+                <div class="member-name">John Doe</div>
+                <div class="member-role">Team Leader</div>
+            </div>
+          
+            <div class="member-card">
+                <div class="member-name">Murugan</div>
+                <div class="member-role">Team Leader</div>
+            </div>
+          
+            <div class="member-card">
+                <div class="member-name">John Doe</div>
+                <div class="member-role">Team Leader</div>
+            </div>
+            <div class="member-card">
+                <div class="member-name">Jane Smith</div>
+                <div class="member-role">Developer</div>
+            </div>
+            <div class="member-card">
+                <div class="member-name">Emily Davis</div>
+                <div class="member-role">Designer</div>
+            </div>
+            <div class="member-card">
+                <div class="member-name">Emily Davis</div>
+                <div class="member-role">Designer</div>
+            </div>
+            <div class="member-card">
+                <div class="member-name">Michael Brown</div>
+                <div class="member-role">Marketing</div>
+            </div>
+            <div class="member-card">
+                <div class="member-name">Sarah Johnson</div>
+                <div class="member-role">QA Analyst</div>
+            </div>
+            <div class="member-card">
+                <div class="member-name">Sarah Johnson</div>
+                <div class="member-role">QA Analyst</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
